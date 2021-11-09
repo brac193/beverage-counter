@@ -1,5 +1,8 @@
 <template>
-  <button @click="count++">Ilość {{ kind }} - {{ count }}</button>
+  <div @click="count++">
+    <img src="../assets/hot-drink2.png" />
+    <button>Ilość {{ kind }} - {{ count }}</button>
+  </div>
 </template>
 
 <script>
