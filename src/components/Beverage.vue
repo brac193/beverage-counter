@@ -2,7 +2,7 @@
   <div class="card">
     <h3>{{ kind }}</h3>
     <img src="../assets/hot-drink2.png" />
-    <p>{{ count }}</p>
+    <p class="quantity">{{ count }}</p>
     <div class="sign-container">
       <span @click="plusOneDrink()" class="sign">&#43;</span>
       <span @click="minusOneDrinkOrZero()" class="sign">&#8722;</span>
@@ -48,5 +48,8 @@ export default {
   max-width: 50%;
   height: fit-content;
   font-size: 50px;
+}
+.quantity {
+  font-size: 30px;
 }
 </style>
