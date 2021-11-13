@@ -2,7 +2,7 @@
   <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
   <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
   <div class="cards">
-    <div class="card" v-for="(bev, index) in beverages" :key="index">
+    <div v-for="(bev, index) in beverages" :key="index">
       <beverage :kind="bev" />
     </div>
   </div>
@@ -50,11 +50,11 @@ export default {
 }
 .card {
   display: grid;
-  grid-template-rows: max-content 200px 1fr;
+  grid-template-rows: max-content 250px 1fr;
 }
 
 .card img {
-  object-fit: cover;
+  object-fit: fill;
   width: 100%;
   height: 100%;
 }
